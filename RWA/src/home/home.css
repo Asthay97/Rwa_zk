@@ -442,13 +442,13 @@ body {
   border-radius: 12px;
 }
 .steps-container .step1-card {
-  background-image: url(../assets/images/browse.jpg);
+  background-image: url(../assets/images/home1.jpeg);
 }
 .steps-container .step2-card {
-  background-image: url(../assets/images/select.jpg);
+  background-image: url(../assets/images/home2.jpeg);
 }
 .steps-container .step3-card {
-  background-image: url(../assets/images/sell.jpg);
+  background-image: url(../assets/images/home3.jpeg);
 }
 .steps-container .step-number {
   display: flex;
@@ -485,7 +485,7 @@ body {
   border-radius: 12px 12px 0px 0px;
 }
 .home-featured-properties-details .featured-properties-container .featured-properties-row {
-  background-image: linear-gradient(rgba(56, 55, 100, 0.8), rgba(23, 23, 48, 0.8)), url(../assets/images/featured-properties-bg.jpg);
+  background-image: linear-gradient(rgba(56, 55, 100, 0.8), rgba(23, 23, 48, 0.8)), url(../assets/images/featured_home.jpeg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;

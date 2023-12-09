@@ -769,7 +769,7 @@ export default function Dashboard() {
                           <div className="row m-0">
                             <div className="col-4 p-0 pe-2">
                               <img
-                                src="/home1.jpg"
+                                src="/home1.jpeg"
                                 alt=""
                                 className="property-img"
                               />

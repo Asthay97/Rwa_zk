@@ -98,7 +98,7 @@ export default function Home() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img src="/upi_logo.png" alt="..." />
+            <img src="/logo1.png" alt="..." />
           </a>
           <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 justify-content-end">
@@ -138,10 +138,10 @@ export default function Home() {
           <div class="col-12 col-md-6 col-lg-4">
             <div class="header-details">
               <h1 class="text-uppercase mb-1">
-                future of real estate investing
+                Asset Guard: Real World Asset Investing
               </h1>
               <p class="text-capitalize mb-3">
-                invest in tokenized real estate for only $50 and sell anytime.
+                Easily invest and secure loans on real world assets 
               </p>
               <button type="button" class="btn text-uppercase promissory-btn">
                 view market place
@@ -149,7 +149,7 @@ export default function Home() {
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-8 pe-0 d-flex justify-content-end">
-            <img src="/home.jpg" alt="..." class="home-img" />
+            <img src="/home.jpeg" alt="..." class="home-img" />
           </div>
         </div>
 
@@ -166,12 +166,12 @@ export default function Home() {
                 <div class="landing-card step1-card d-flex align-items-end">
                   <div class="txt-content bg-white mx-3 px-4 d-flex flex-column justify-content-between">
                     <h6 class="text-center text-capitalize pri-clr mt-4">
-                      browse properties
+                      browse assets
                     </h6>
                     <p class="text-center sec-clr fs-14">
                       View detailed financial data, inspection reports, and
                       more. All property documents are publicly available, E.g.,
-                      3139 West Blvd
+                      36 Rohan Iksha
                     </p>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ export default function Home() {
                 <div class="landing-card step2-card d-flex align-items-end">
                   <div class="txt-content bg-white mx-3 px-4 d-flex flex-column justify-content-between">
                     <h6 class="text-center text-capitalize pri-clr mt-4">
-                      select property
+                      select asset
                     </h6>
                     <p class="text-center sec-clr fs-14">
                       Purchase tokens for $50 each and become a direct owner.
@@ -244,7 +244,7 @@ export default function Home() {
 
             <div class="featured-properties-row p-4">
               <h4 class="text-capitalize mb-4 text-white text-center">
-                featured properties
+                featured assets
               </h4>
 
               <div class="action-btns text-center mb-3">
@@ -261,7 +261,7 @@ export default function Home() {
                     autocomplete="off"
                   />
                   <label class="btn btn-outline-primary" for="btnradio1">
-                    home
+                    machinery
                   </label>
 
                   <input
@@ -273,7 +273,7 @@ export default function Home() {
                     checked
                   />
                   <label class="btn btn-outline-primary mx-3" for="btnradio2">
-                    apartment
+                    real estate
                   </label>
 
                   <input
@@ -284,7 +284,7 @@ export default function Home() {
                     autocomplete="off"
                   />
                   <label class="btn btn-outline-primary" for="btnradio3">
-                    land
+                    gold
                   </label>
                 </div>
               </div>
@@ -295,7 +295,7 @@ export default function Home() {
                     <div key={index} class="col-4">
                       <div class="home-analytics-card">
                         <img
-                          src="/home1.jpg"
+                          src="/home1.jpeg"
                           alt="..."
                           class="w-100 h-100 home-img"
                         />
@@ -520,7 +520,7 @@ export default function Home() {
                     type="button"
                     class="btn text-uppercase promissory-btn fs-13 view-all-btn"
                   >
-                    view all properties
+                    view all assets
                   </button>
                 </div>
                 <div class="col-4 d-flex align-items-center justify-content-center">
@@ -534,54 +534,26 @@ export default function Home() {
             </div>
 
             <div class="customer-reviews-row p-5 pb-2">
-              <div class="row">
-                <div class="col-5 d-flex align-items-center">
-                  <h4 class="mb-5 pri-clr">Happy Customers</h4>
-                </div>
-
-                <div class="col-5">
+              {/* <div class="row">
+                <div class="col-5"> */}
                   <div class="user-feedback-details">
                     <h4 class="pri-clr fw-400 mb-2">
-                      THE BEST WAY TO INVEST IN REAL ESTATE
+                      THE BEST WAY TO INVEST IN REAL WORLD ASSETS
                     </h4>
-                    <p class="black-clr mb-4 fs-14">
-                      I’ve invested in a handful of properties through Lofty and
-                      love the simplicity of distributing payments via the
-                      blockchain. It feels like the future of real estate.
-                    </p>
                     <div class="user-details d-flex flex-column mb-5">
                       <span class="black-clr fw-500 fs-14">
                         {" "}
-                        Alex Farrill,{" "}
-                      </span>
-                      <span class="sec-clr fs-12">
-                        Alex Farrill, Head Of Engineering For Buyer At Opendoor
+                        Made by: Astha Yadav,{" "}
+                        Mohit Vashistha
                       </span>
                     </div>
                   </div>
                 </div>
-
-                <div class="col-2 d-flex align-items-end">
-                  <div class="position-relative me-2">
-                    <div class="view-next">
-                      <div class="view-btn disabled-btn">
-                        <i class="fa fa-arrow-left grey-clr"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="position-relative">
-                    <div class="view-next">
-                      <div class="view-btn">
-                        <i class="fa fa-arrow-right grey-clr"></i>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          {/* </div>
+        </div> */}
       </div>
-    </div>
   );
 }
