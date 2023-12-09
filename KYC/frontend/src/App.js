@@ -29,14 +29,9 @@ function App() {
             >
               <CardBody style={{ paddingBottom: 0 }}>
                 <p>
-                  This is a fullstack template for creating a Polygon ID VC{" "}
-                  <a href="https://0xpolygonid.github.io/tutorials/#core-concepts-of-polygon-id-verifiable-credentials-identity-holder-issuer-and-verifier-triangle-of-trust">
-                    (Verifiable Credential)
-                  </a>{" "}
-                  gated dapp. Prove you were born before January 1, 2023 to use
-                  the dapp
+                  You need to complete your kyc before becoming an asset owner, investoror approver. 
+                  Don't worry we dont keep your data! Just wanna ensure you are above 18 years of age. 
                 </p>
-
                 <PolygonIDVerifier
                   publicServerURL={
                     process.env.REACT_APP_VERIFICATION_SERVER_PUBLIC_URL
@@ -51,7 +46,7 @@ function App() {
                   onVerificationResult={setProvedAccessBirthday}
                 />
                 <Image
-                  src="https://bafybeibcgo5anycve5flw6pcz5esiqkvrzlmwdr37wcqu33u63olskqkze.ipfs.nftstorage.link/"
+                  src="/browse_home.jpeg"
                   alt="Polygon devs image"
                   borderRadius="lg"
                 />
@@ -69,7 +64,6 @@ function App() {
                     fontSize: "8px",
                   }}
                 >
-                  Template built with 💜 by Steph
                 </p>
               </a>
             </Card>
