@@ -1,0 +1,268 @@
+html,
+body {
+  font-family: 'Ubuntu';
+}
+
+// menuBar
+@import '../menuBar/menuBar.scss';
+
+// styles
+@import '../assets/styles';
+
+.content-right {
+  background-color: $container-bg-secondary-clr;
+}
+
+.header {
+  border-bottom: 1px solid rgb(45 40 62 / 10%);
+}
+
+.badge {
+  box-shadow: 0px 2px 9px #1e004626;
+}
+
+.dashboard-card {
+  background-color: $white-color;
+  box-shadow: 0px 2px 12px #cfd6e066;
+  border-radius: 6px;
+}
+
+.bx-shdw {
+  box-shadow: 0px 0px 12px #cfd6e066;
+  clip-path: inset(0px -12px 0px 1px);
+}
+
+.dets-in-labl-val {
+  line-height: 14px;
+}
+
+.property-indicator {
+  width: fit-content;
+  background: rgb(230 184 254 / 20%);
+  border-radius: 3px;
+  padding: 2px 3px;
+}
+
+.action-btns {
+  label {
+    border: 1px solid $primary-color;
+    border-radius: 30px;
+    color: $primary-color;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom-left-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    &:hover {
+      border: 1px solid $primary-color !important;
+      color: $primary-color !important;
+    }
+    &:active {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  .btn-check:checked + .btn {
+    background-color: $primary-color;
+    color: #ffffff;
+    border: 1px solid $primary-color !important;
+    &:hover {
+      border: 1px solid $primary-color !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+.wallet-address-link {
+  line-height: 11px;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $grey-color;
+  border-radius: 6px;
+}
+
+.transactions-list {
+  .list-group {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 12px #cfd6e066;
+    border-radius: 6px;
+  }
+  .list-group-item {
+    color: $black-color;
+    font-size: 13px;
+    border: 0;
+    padding: 8px;
+  }
+}
+
+.my-properties-data {
+  .list-group {
+    height: calc(100vh - 185px);
+    overflow: auto;
+    .list-group-item {
+      box-shadow: 0px 2px 12px #cfd6e066;
+      border-radius: 6px;
+
+      .property-img {
+        width: 100%;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+    }
+    .lh-10 {
+      line-height: 10px;
+    }
+    .hr-line {
+      color: $secondary-color;
+      margin: 5px 0px;
+    }
+    .success-percent-data {
+      border: 1px solid rgb(89 159 100 / 50%);
+      border-radius: 4px;
+    }
+  }
+  .refer-earn-info {
+    border-top: 1px solid #dddbe3;
+    margin: 10px 0;
+    padding: 10px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .my-properties-data {
+    .list-group {
+      height: calc(100vh - 205px);
+    }
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .my-properties-data {
+    .list-group {
+      .list-group-item {
+        .minimum-value-data {
+          .min-val {
+            font-size: 10px !important;
+          }
+          .min-txt {
+            font-size: 8px !important;
+          }
+        }
+        .tokens-data {
+          .tokens-val {
+            font-size: 10px !important;
+          }
+          .tokens-txt {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .my-properties-data {
+    .list-group {
+      .list-group-item {
+        .minimum-value-data {
+          .min-val {
+            font-size: 13px !important;
+          }
+          .min-txt {
+            font-size: 10px !important;
+          }
+        }
+        .tokens-data {
+          .tokens-val {
+            font-size: 13px !important;
+          }
+          .tokens-txt {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .my-properties-data {
+    .list-group {
+      .list-group-item {
+        .minimum-value-data {
+          .min-val {
+            font-size: 10px !important;
+          }
+          .min-txt {
+            font-size: 8px !important;
+          }
+        }
+        .tokens-data {
+          .tokens-val {
+            font-size: 10px !important;
+          }
+          .tokens-txt {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .my-properties-data {
+    .list-group {
+      height: calc(100vh - 220px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-content-left {
+    height: calc(100vh - 53px);
+  }
+  .content-right {
+    .my-properties-data {
+      .list-group {
+        height: calc(100vh - 238px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .content-right {
+    .my-properties-data {
+      .list-group {
+        height: calc(100vh - 257px) !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dashboard-content-left {
+    height: auto;
+  }
+  .content-right {
+    .my-properties-data {
+      .list-group {
+        height: auto !important;
+      }
+    }
+  }
+}

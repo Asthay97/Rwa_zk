@@ -1,0 +1,43 @@
+html,
+body {
+  font-family: 'Ubuntu';
+}
+
+// styles
+@import '../assets/styles';
+
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 249, 250, 1) 0%,
+    rgba(241, 243, 246, 1) 50%
+  );
+  border-radius: 12px;
+
+  .nav-link {
+    color: $black-color;
+    font-weight: 500;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin: 0 !important;
+    border-radius: 0;
+
+    .navbar-toggler {
+      border: 0;
+      padding-left: 0;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .navbar-brand {
+      display: none;
+    }
+  }
+}

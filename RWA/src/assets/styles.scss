@@ -1,0 +1,262 @@
+$primary-color: #812bb1;
+$secondary-color: #564f70;
+$black-color: #2d283e;
+$white-color: #ffffff;
+$grey-color: #e6b8fe;
+$blue-color: #276fd1;
+$email-lite-pink-color: #e6b8fe;
+$container-bg-clr: #fdfaff;
+$container-bg-secondary-clr: #f2f0fa;
+
+.pri-clr {
+  color: $primary-color;
+}
+
+.sec-clr {
+  color: $secondary-color;
+}
+
+.black-clr {
+  color: $black-color;
+}
+
+.grey-clr {
+  color: $grey-color;
+}
+
+.blue-clr {
+  color: $blue-color;
+}
+
+.email-lite-pink-clr {
+  color: $email-lite-pink-color;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px !important;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.h-100vh {
+  height: 100vh;
+  overflow: auto;
+}
+
+html,
+body {
+  background: transparent linear-gradient(0deg, #c6c7d800 0%, #c6c7d8 100%) 0%
+    0% no-repeat padding-box;
+}
+
+// for sleek scorllbar
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
+  ::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@include scrollbars(0.3em, $primary-color);
+
+.promissory-btn {
+  background-color: $primary-color;
+  color: $white-color;
+  border-radius: 25px;
+  padding: 7px 28px;
+  font-size: 14px;
+  word-spacing: 2px;
+  &:hover {
+    background-color: $primary-color;
+    color: $white-color;
+    opacity: 0.7;
+  }
+  &:active {
+    background-color: $primary-color !important;
+    color: $white-color !important;
+    opacity: 0.7 !important;
+  }
+}
+
+.promissory-trnsprnt-btn {
+  border: 0 !important;
+  &:hover {
+    color: $primary-color !important;
+    opacity: 0.7;
+    border: 0 !important;
+  }
+  &:active {
+    color: $primary-color !important;
+    opacity: 0.5 !important;
+    border: 0 !important;
+  }
+}
+
+.promissory-trnsprnt-link {
+  border: 0 !important;
+  &:hover {
+    color: $blue-color !important;
+    opacity: 0.7;
+    border: 0 !important;
+  }
+  &:active {
+    color: $blue-color !important;
+    opacity: 0.5 !important;
+    border: 0 !important;
+  }
+}
+
+.forgot-pswd-btn,
+.register-btn-link,
+.login-btn-link {
+  text-decoration: none;
+  &:hover {
+    color: $grey-color;
+    opacity: 0.7;
+  }
+  &:active {
+    color: $grey-color !important;
+    opacity: 0.5;
+  }
+}
+
+.disabled-btn {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.login-container,
+.register-container {
+  height: calc(100vh - 102px);
+  .img-col {
+    .img-content {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      border-radius: 10px;
+      background: transparent
+        linear-gradient(122deg, #eff1f400 0%, #b7a3c972 52%, #724393 100%) 0% 0%
+        no-repeat padding-box;
+    }
+  }
+}
+
+.login-form-content,
+.register-form-content {
+  width: 500px;
+
+  .login-form,
+  .register-form {
+    border-bottom: 1px solid $secondary-color;
+  }
+}
+
+.landing-card {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 12px;
+
+  .txt-content {
+    border-radius: 12px 12px 0px 0px;
+    height: 140px;
+    overflow: auto;
+    p {
+      line-height: 18px;
+    }
+  }
+}
+
+.home-analytics-card {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  border-radius: 10px;
+
+  .home-img {
+    border-radius: 10px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .top-content {
+      border-radius: 10px 10px 0px 0px;
+    }
+    .bottom-content {
+      border-radius: 0px 0px 12px 12px;
+      .increased-percent {
+        border-radius: 4px;
+      }
+    }
+  }
+  // background-image: url(../assets/images/home1.jpg);
+}
+
+.promissory-container {
+  height: 100vh;
+  overflow: auto;
+  background-color: $container-bg-clr;
+}
+
+@media screen and (max-width: 768px) {
+  .root-container {
+    flex-direction: column;
+  }
+  .promissory-container {
+    height: calc(100vh - 53px);
+  }
+}

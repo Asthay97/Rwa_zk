@@ -1,0 +1,83 @@
+html,
+body {
+  font-family: 'Ubuntu';
+  background: linear-gradient(
+    90deg,
+    rgba(45, 40, 62, 1) 0%,
+    rgba(77, 68, 96, 1) 50%
+  ) !important;
+}
+
+// navbar
+@import '../navbar/navbar.scss';
+
+// styles
+@import '../assets/styles.scss';
+
+.input-block {
+  position: relative;
+}
+.input-block
+  input:not([type='radio']):not([type='checkbox']):not([type='file']) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 14px 10px 0;
+  width: 100%;
+  height: 48px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  color: $black-color;
+}
+.input-block
+  input:not([type='radio']):not([type='checkbox']):not([type='file'])
+  + label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translate(-3%, -50%);
+  font-size: 14px;
+  color: $secondary-color;
+  cursor: text;
+  transition: 0.1s ease-in-out;
+}
+.input-block
+  input:not([type='radio']):not([type='checkbox']):not([type='file'])[required]
+  + label::after {
+  content: '*';
+  color: #f44336;
+}
+.input-block
+  input:not([type='radio']):not([type='checkbox']):not([type='file']):focus
+  + label,
+.input-block
+  input:not([type='radio']):not([type='checkbox']):not([type='file']).fill
+  + label {
+  top: 30%;
+  font-size: 12px;
+}
+.input-block
+  input:not([type='radio']):not([type='checkbox']):not([type='file']):focus {
+  border-color: #00baff;
+}
+
+.activate-account-details {
+  border-bottom: 1px solid $secondary-color;
+}
+
+@media screen and (max-width: 768px) {
+  .register-container {
+    height: calc(100vh - 54px);
+  }
+  .img-col {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-analytics-card {
+    height: auto;
+  }
+}

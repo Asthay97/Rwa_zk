@@ -1,0 +1,187 @@
+html,
+body {
+  font-family: 'Ubuntu';
+}
+
+// navbar
+@import '../navbar/navbar.scss';
+
+// styles
+@import '../assets/styles.scss';
+
+.header-details {
+  h1 {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: $primary-color;
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    color: $secondary-color;
+  }
+}
+
+.home-img {
+  height: 380px;
+}
+
+.home-steps-details {
+  background: transparent linear-gradient(91deg, #c6c7d8 0%, #a491bc 100%) 0% 0%
+    no-repeat padding-box;
+  height: 446px;
+}
+
+.steps-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../assets/images/helpBG.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 12px;
+
+  .step1-card {
+    background-image: url(../assets/images/browse.jpg);
+  }
+
+  .step2-card {
+    background-image: url(../assets/images/select.jpg);
+  }
+
+  .step3-card {
+    background-image: url(../assets/images/sell.jpg);
+  }
+
+  .step-number {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 46%;
+    margin-top: 1.5rem;
+    .step-count {
+      border: 2px solid $secondary-color;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 100%;
+      color: $secondary-color;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-hr {
+      width: 100%;
+      border: 1px dashed $secondary-color;
+    }
+  }
+}
+
+.home-featured-properties-details {
+  background: transparent linear-gradient(0deg, #c6c7d800 0%, #c6c7d8 100%) 0%
+    0% no-repeat padding-box;
+  .featured-properties-container {
+    .analytics-row {
+      background: #ffffff80 0% 0% no-repeat padding-box;
+      border: 1px solid #ffffff;
+      border-radius: 12px 12px 0px 0px;
+    }
+
+    .featured-properties-row {
+      background-image: linear-gradient(
+          rgb(56 55 100 / 80%),
+          rgb(23 23 48 / 80%)
+        ),
+        url(../assets/images/featured-properties-bg.jpg);
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .action-btns {
+        label {
+          border: 1px solid #cfd6e0;
+          border-radius: 30px;
+          width: 140px;
+          color: #ffffff;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 13px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .btn-check:checked + .btn {
+          background-color: #cfd6e0;
+          color: $black-color;
+        }
+      }
+
+      .view-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .view-btn {
+          border: 2px solid $grey-color;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          border-radius: 100%;
+          color: $grey-color;
+          font-weight: 500;
+          z-index: 99;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .view-all-btn {
+        z-index: 99;
+      }
+
+      .view-hr {
+        width: 100%;
+        border: 1px dashed #cfd6e080;
+        width: 192%;
+        position: absolute;
+      }
+    }
+
+    .customer-reviews-row {
+      background: #ffffff;
+      box-shadow: 0px 12px 24px #2815334d;
+      border: 1px solid #ffffff;
+      border-radius: 0px 0px 12px 12px;
+      .view-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .view-btn {
+          border: 2px solid $grey-color;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          border-radius: 100%;
+          color: $black-color;
+          font-weight: 500;
+          z-index: 99;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
