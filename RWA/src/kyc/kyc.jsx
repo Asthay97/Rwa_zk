@@ -8,6 +8,7 @@ export default function KYC(){
 
 const [home,setHome]=useState(false)
 const [login,setLogin]=useState(false)
+const [isVerified,setisVerified]=useState(false)
 
 if(home){
   return (
@@ -46,42 +47,16 @@ return (
   </head>
   
     
-    <nav className="navbar navbar-expand-md mx-4 my-3">
-      <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <a className="navbar-brand" href="#">
-          <img src="/upi_logo.png" alt="..." />
-        </a>
-        <div className="collapse navbar-collapse" id="navbarToggler">
-          <ul className="navbar-nav me-auto mb-2 mb-md-0 w-100 justify-content-end">
-          <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-          </li>
-          
-            <li className="nav-item">
-              <a className="nav-link" href="#"> Learn </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#"> Blog </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#"> My Account </a>
-            </li>
+  <iframe
+        title="MyIframe"
+        width="100%"
+        height="768"
+        src="http://localhost:3000"
+        frameBorder="0"
+        allowFullScreen
+        onClick={()=>setisVerified(true)}
+         />
 
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <div className="container-fluid w-auto kyc-container p-0 mx-4">
       <div className="row h-100">

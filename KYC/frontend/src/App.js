@@ -11,7 +11,14 @@ function App() {
   return (
     <>
       {provedAccessBirthday ? (
-        <VcGatedDapp />
+       <iframe
+       title="MyIframe"
+       width="100%"
+       height="768"
+       src="http://localhost:5173"
+       frameBorder="0"
+       allowFullScreen
+        />
       ) : (
         <Center className="vc-check-page">
           <Container>
