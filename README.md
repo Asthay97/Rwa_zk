@@ -11,5 +11,22 @@ KYC: A Polygon-ID-based verification portal to issue DIDs, Verifiable credential
 RWA: A portal to view all listed tangible assets and manage users' dashboards along with KYC and admin module integration.
 
 
+Deployment links: 
+### Polygon: 
+1. ERC20: ```0x2aC68A7Fa635972335d1d0880aa8861c5a46Bf88```
+2. ```https://mumbai.polygonscan.com/address/0x2aC68A7Fa635972335d1d0880aa8861c5a46Bf88#code```
+3. AssetGuard: ```0xfB277aEA2A925042A18d16Dbc3F5bcB52aDb524F```
+4. ```https://mumbai.polygonscan.com/address/0xfB277aEA2A925042A18d16Dbc3F5bcB52aDb524F#code```
 
+### Scroll:
+1. ERC20: ```0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c```
+2. ```https://sepolia-blockscout.scroll.io/address/0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c/read-contract#address-tabs```
+3. AssetGuard: ```0xeDB1dD6fbD27eB7625F0d48a5eD34Bd818de37EF```
+4. ```https://sepolia-blockscout.scroll.io/address/0xeDB1dD6fbD27eB7625F0d48a5eD34Bd818de37EF#code```
+
+Mantle:
+1. ERC20: ```0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450```
+2. ```https://explorer.testnet.mantle.xyz/address/0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450#code```
+3. AssetGuard: ```0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c```
+4. ```https://explorer.testnet.mantle.xyz/address/0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c#code```
 
