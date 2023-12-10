@@ -26,19 +26,19 @@ Deployment links:
 
 Mantle:
 1. ERC20: ```0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450```
-2. ```https://explorer.testnet.mantle.xyz/address/0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450#code```
+2. [https://explorer.testnet.mantle.xyz/address/0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450#code]()
 3. AssetGuard: ```0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c```
-4. ```https://explorer.testnet.mantle.xyz/address/0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c#code```
+4. [https://explorer.testnet.mantle.xyz/address/0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c#code]()
 
 Polygon zkEVM:
 1. ERC20: ```0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450```
-2. ```https://testnet-zkevm.polygonscan.com/address/0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450#code```
+2. [https://testnet-zkevm.polygonscan.com/address/0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450#code]()
 3. AssetGuard: ```0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c```
-4. ```https://testnet-zkevm.polygonscan.com/address/0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c#code```
+4. [https://testnet-zkevm.polygonscan.com/address/0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c#code]()
 
 OKX:
 1. ERC20: ```0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450```
-2. ```https://www.oklink.com/x1-test/address/0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450/contract```
+2. [https://www.oklink.com/x1-test/address/0x6010aD99dc78aE5cEFd2f9fdEC10A73eAf245450/contract]()
 3. AssetGuard: ```0xB1fEB0D11c2311990955c5606EF12dFC8a36C95c```
-4. ```https://www.oklink.com/x1-test/address/0xb1feb0d11c2311990955c5606ef12dfc8a36c95c/contract```
+4. [https://www.oklink.com/x1-test/address/0xb1feb0d11c2311990955c5606ef12dfc8a36c95c/contract]()
 
